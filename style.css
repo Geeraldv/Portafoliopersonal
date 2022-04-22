@@ -450,15 +450,16 @@
     }
     .proyectos .proyecto-content{
         width: 700px;
-        height: 325px;
+        height: auto;
         column-gap: 10px;
 
-        grid-template-rows: repeat(3,1fr);
+        grid-template-rows: 70px 1fr 1fr;
         grid-template-columns: repeat(3,1fr);
     }
     .proyecto-content h1{
+        font-size: 22px;
+        font-weight: 400;
         grid-column: 1 / 4;
-        text-align: center;
     }
 
     .habilidades{
@@ -468,10 +469,9 @@
     }
     .habilidades .habilidades-content{
         width: 700px;
-        height: 500px;
+        height: auto;
         column-gap: 10px;
-
-        grid-template-rows: repeat(3,1fr);
+        grid-template-rows: 70px 1fr 1fr;
         grid-template-columns: repeat(3,1fr);
     }
     .habilidades-content h1{
@@ -561,10 +561,12 @@
         margin-bottom: 100px;
 
     }
+
     .proyectos .proyecto-content{
         width: 900px;
         height: 500px;
-        column-gap: 10px;
+        column-gap: 20px;
+        row-gap: 20px;
 
         grid-template-rows: 70px 1fr 1fr;
         grid-template-columns: repeat(3,1fr);
