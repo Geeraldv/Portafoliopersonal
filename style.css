@@ -18,6 +18,9 @@
     width: 100%;
     align-items: center;
     justify-content: space-between;
+
+    border-bottom: 2px solid#26292D;
+
     
 }
 
@@ -360,10 +363,13 @@
     }
 
 
+    .header .logoname{
+        font-size: 20px;
+    }
 
     .section-principal{
         width: 100%;
-        height: 50vh;
+        height: 80vh;
         align-items: center;
     }
     .text-section{
@@ -491,8 +497,111 @@
 
 @media screen and (min-width:900px) {
 
-    .main{
-        
+
+    .header .logoname{
+        margin-left: 124px;
+        font-size: 24px;
     }
+
+    .header .link-header{
+        margin-right: 142px;
+    }
+
+    .header a{
+        font-size: 16px;
+    }
+
+    .section-principal{
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+    }
+    .text-section{
+        width: 624px;
+        height: 300px;
+    }
+    .text-section h1,h3{
+
+        color: white;
+        font-size: 60px;
+        font-weight: 700;
+    }
+    
+    .acercade{
+        margin-bottom: 128px;
+    }
+
+    .acercade .acerca-de-content{
+        height: 453.16px;
+        width: 967px;
+    }
+    
+    .acerca-de-content .img-principal{
+        height: 450px;
+        width: 460px;
+    }
+
+    .acerca-de-content h1{
+        font-size: 35px;
+        margin-bottom: 32px;
+    }
+
+    .acerca-de-content p{
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+
+    .proyectos{
+        width: 100%;
+        margin-bottom: 100px;
+
+    }
+    .proyectos .proyecto-content{
+        width: 900px;
+        height: 500px;
+        column-gap: 10px;
+
+        grid-template-rows: 70px 1fr 1fr;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .proyecto-content h1{
+        grid-column: 1 / 4;
+        text-align: start;
+    }
+
+
+    .habilidades{
+        width: 100%;
+        margin-bottom: 100px;
+
+    }
+    .habilidades .habilidades-content{
+        width: 900px;
+        height: 500px;
+        column-gap: 10px;
+        grid-template-rows: 70px 1fr 1fr;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .habilidades-content h1{
+        grid-column: 1 / 4;
+        text-align: start;
+        font-weight: 700;
+    }
+
+    
+    .footer{
+        width: 100%;
+
+    }
+
+    .footer-content{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 900px;
+        height: 200px;
+    }
+    
     
 }
