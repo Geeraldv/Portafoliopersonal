@@ -573,6 +573,7 @@
     }
     .proyecto-content h1{
         grid-column: 1 / 4;
+        font-weight: 700;
         text-align: start;
     }
 
